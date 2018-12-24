@@ -81,12 +81,123 @@
           box-sizing: border-box;
 }
 html {
-  font-size: 16px;
+  font-size: 62.5%;
   font-family: 'Open Sans'/*rtl:Sahel*/
 }
 html[dir], [dir] body, [dir] h1, [dir] h2, [dir] h3, [dir] h4, [dir] h5, [dir] h6, [dir] p, [dir] ol, [dir] ul, [dir] menu, [dir] section {
   margin: 0;
   padding: 0;
+}
+/* Resume */
+[dir] .resume {
+    margin: 20px 5%;
+}
+.resume a {
+    text-decoration: none;
+}
+.name {
+    font-size: 4rem;
+}
+#profession {
+    font-size: 1.4rem;
+    color: #2e2e2b;
+}
+.job-section {
+    width: 60%;
+}
+.listing-title, #skills {
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+[dir] .listing-title, [dir] #skills {
+    margin-top: 15px;
+}
+.job-title {
+    font-size: 2rem;
+    line-height: 1.6;
+    font-weight: 500;
+    color: #4f4c4f;
+}
+.job-link {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: 600;
+}
+[dir] .job-link {
+    padding-bottom: 10px;
+}
+.job-duration {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #867b86;
+    font-weight: 600;
+    line-height: 1.5;
+}
+[dir] .job-duration {
+    padding-bottom: 10px;
+}
+[dir] .job-heading {
+    margin-top: 10px;
+}
+.job-desc {
+    font-family: Lato;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+[dir] .job-desc {
+    padding-bottom: 15px;
+}
+[dir] .job-desc ul:not(:first-child) {
+    margin-top: 10px;
+}
+.job-desc ul {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+[dir=ltr] .job-desc ul {
+  margin-left: 20px;
+}
+[dir=rtl] .job-desc ul {
+    margin-right: 20px;
+}
+/* skill svg */
+.skill-set {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    width: 45%;
+}
+[dir] .skill-set {
+    margin: 20px 0;
+}
+.skill-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+}
+.skill-svg svg {
+    width: 30%;
+    height: 30%
+}
+@media (max-width: 1024px) {
+    .job-section {
+        width: 80%
+    }
+}
+@media (max-width: 800px) {
+    .job-section {
+        width: 100%
+    }
+}
+@media (max-width: 500px) {
+    .skill-set {
+        width: 100%;
+    }
 }
 /* MENU */
 .menu {
@@ -795,4 +906,4 @@ input, form button, textarea {
 }
 
 
-/*# sourceMappingURL=main.85e83f626d0738db6f86.css.map*/
+/*# sourceMappingURL=main.d9b1250812ee4d4c879d.css.map*/
